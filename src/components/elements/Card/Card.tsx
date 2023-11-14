@@ -10,7 +10,7 @@ type RatingP = {
   available: boolean;
 };
 const Card = ({ card }: Props) => {
-  const { image, name, price, rating, votes, available } = card;
+  const { image, name, price, rating, votes, available, popular } = card;
 
   const RatingComponent = ({ rating, votes, available }: RatingP) => {
     const isRated = votes > 0;
@@ -36,6 +36,7 @@ const Card = ({ card }: Props) => {
     <div className={styles.container}>
       <div className={styles['image-container']}>
         <img className={styles.img} src={image} alt={name}/>
+        {popular && <h5 className={styles.popular}>Popular</h5>}
       </div>
       <div className={styles.header}>
         <div className={`${styles.flex} ${styles.row} ${styles.jc}`}>

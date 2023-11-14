@@ -42,3 +42,13 @@
   padding: 4px;
   border-radius: 8px;
 }
+
+.popular {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4px 8px;
+  margin: 12px 4px;
+  border-radius: 10px;
+  background-color: $yellow-primary;
+}
