@@ -7,7 +7,8 @@
   color: $text-primary;
 }
 .desc-text {
-  color: $text-secondary
+  color: $text-secondary;
+  margin-left: 4px;
 }
 
 .error-text {
@@ -30,6 +31,9 @@
   }
   .header {
     flex: 1;
+    div {
+      height:50px;
+    }
   }
 }
 

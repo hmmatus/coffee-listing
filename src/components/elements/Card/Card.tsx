@@ -15,7 +15,7 @@ const Card = ({ card }: Props) => {
   const RatingComponent = ({ rating, votes, available }: RatingP) => {
     const isRated = votes > 0;
     return (
-      <div className={`${styles.flex} ${styles.row} ${styles.jc} ${styles.ai}`}>
+      <div className={`${styles.flex} ${styles.row} ${styles.jc} ${styles.ai} ${styles['mt-10']}`}>
         <div className={`${styles.flex} ${styles.row} ${styles.ai}`}>
           <Image
             alt="Star"
