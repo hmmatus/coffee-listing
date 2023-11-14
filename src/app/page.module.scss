@@ -23,19 +23,32 @@
   width: 85vw;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   background-color: $modal-primary-background;
   border-radius: 8px;
+  transform: translate(-50%, -20%);
+  @media (min-width: 720px) {
+    transform: translate(-50%, -40%);
+  }
+  @media (min-width: 1024px) {
+    transform: translate(-50%, -60%);
+  }
 }
 
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
   background-image: url("/images/svg/vector.svg");
-  background-size: cover; /* Add this line */
+  background-size: auto;
   background-repeat: no-repeat;
+  background-position: right; /* Adjust this line */
+  width: 90%;
+  @media (min-width: 720px) {
+    width: 60%;
+  }
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
   h2 {
     color: $text-primary;
   }
