@@ -1,5 +1,75 @@
-@import 'colors';
+@import "colors";
+@import "base";
 
 .container {
+  position: relative;
   background-color: $primary-background;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: scroll;
+}
+
+.img {
+  width: 100vw;
+  height: 300px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 85vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $modal-primary-background;
+  border-radius: 8px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-image: url("/images/svg/vector.svg");
+  background-size: cover; /* Add this line */
+  background-repeat: no-repeat;
+  h2 {
+    color: $text-primary;
+  }
+  p {
+    color: $text-secondary;
+  }
+}
+
+.store-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 32px;
+  @media (min-width: 720px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  gap: 16px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .button {
+    padding: 12px;
+    min-width: 100px;
+    color: $text-primary;
+    border-radius: 12px;
+    background-color: transparent;
+    border: none;
+  }
+  .selected {
+    background-color: $text-secondary;
+  }
 }
