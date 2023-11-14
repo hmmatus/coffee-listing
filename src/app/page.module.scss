@@ -1,5 +1,49 @@
 @import 'colors';
+@import 'base';
 
 .container {
+  position: relative;
   background-color: $primary-background;
+  width: 100vw;
+  height: 100vh;
+}
+
+.img {
+  width: 100vw;
+  height: 300px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 80vw;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $modal-primary-background;
+  border-radius: 8px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-image: url('/images/svg/vector.svg');
+  h2 {
+    color: $text-primary;
+  }
+  p {
+    color: $text-secondary;
+  }
+}
+
+.store-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
 }

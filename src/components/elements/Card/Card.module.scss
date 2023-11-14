@@ -1,0 +1,40 @@
+@import 'colors';
+@import 'base'; 
+// action 
+
+
+.header-text {
+  color: $text-primary;
+}
+.desc-text {
+  color: $text-secondary
+}
+
+.error-text {
+  color: $alert-text;
+}
+// containers
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  .image-container {
+    flex: 3;
+    position: relative;
+    border-radius: 8px;
+    .img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+  .header {
+    flex: 1;
+  }
+}
+
+.price {
+  background-color: $price-background;
+  padding: 4px;
+  border-radius: 8px;
+}
