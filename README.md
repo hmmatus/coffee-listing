@@ -31,4 +31,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-Check out my [Deployed app](https://nextjs.org/docs/deployment](https://coffee-listing.vercel.app/)https://coffee-listing.vercel.app/) for more details.
+Check out my [Deployed app](https://coffee-listing.vercel.app/) for more details.
